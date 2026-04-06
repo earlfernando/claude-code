@@ -58,8 +58,14 @@ main() {
 
     # Check if there are any other active sessions in THIS project
     if ! check_active_sessions_in_project "$PROJECT_ROOT"; then
-        echo "Post-session: No other sessions in this project. Renaming $CLAUDE_FILE to $AGENTS_FILE"
-        mv "$CLAUDE_FILE" "$AGENTS_FILE"
+        # Check if Claude.md has changes compared to Agents.md
+        if [[ -f "$AGENTS_FILE" ]] && cmp -s "$CLAUDE_FILE" "$AGENTS_FILE"; then
+            echo "Post-session: No changes detected. Deleting $CLAUDE_FILE"
+            rm "$CLAUDE_FILE"
+        else
+            echo "Post-session: Changes detected. Renaming $CLAUDE_FILE to $AGENTS_FILE"
+            mv "$CLAUDE_FILE" "$AGENTS_FILE"
+        fi
     else
         echo "Post-session: Other sessions active in this project. Keeping $CLAUDE_FILE"
     fi
