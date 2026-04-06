@@ -10,7 +10,7 @@
     {
       "name": "agent-instruction-manager",
       "description": "Automatically switches between Agents.md and Claude.md based on active Claude Code sessions",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Earl",
         "url": "https://github.com/earlfernando"

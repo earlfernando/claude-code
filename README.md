@@ -24,15 +24,16 @@ Add to your Claude Code settings:
 }
 ```
 
+Then enable the plugin in Claude Code.
+
 ## Structure
 
 ```
 workflows/agent-instruction-manager/
-├── .claude/
-│   ├── hooks/
-│   │   ├── preSession.sh
-│   │   └── postSession.sh
-│   └── settings.json
-└── .claude-plugin/
-    └── marketplace.json
+├── hooks/
+│   └── hooks.json              # Hook configuration
+└── .claude/
+    └── hooks/
+        ├── preSession.sh       # Creates Claude.md from Agents.md
+        └── postSession.sh      # Renames Claude.md back to Agents.md
 ```
