@@ -2,11 +2,18 @@
 
 Automatically manages agent instruction files based on Claude Code session state.
 
+## Why This Plugin?
+
+Claude Code doesn't natively support [Agents.md](https://agents.md/) - the universal agent instruction format that works across many AI coding tools. This plugin provides a clean workaround by automatically converting between formats.
+
+**One AGENTS.md works across many agents** - Your agent definitions are compatible with a growing ecosystem of AI coding agents and tools.
+
 ## Features
 
 - Creates `Claude.md` from `Agents.md` when session starts
 - Renames `Claude.md` back to `Agents.md` when session ends
 - Only operates when no other Claude sessions are active in the directory
+- Seamless integration with the [agents.md](https://agents.md/) ecosystem
 
 ## Usage
 

@@ -5,7 +5,12 @@ Personal collection of Claude Code workflows and automation tools.
 ## Workflows
 
 ### Agent Instruction Manager
+
 Automatically manages `Claude.md` and `Agents.md` files based on session state.
+
+Claude Code doesn't natively support [Agents.md](https://agents.md/) - the universal agent instruction format. This workflow provides a clean workaround by automatically converting between formats.
+
+**One AGENTS.md works across many agents** - Your agent definitions are compatible with a growing ecosystem of AI coding agents and tools.
 
 ## Installation
 
