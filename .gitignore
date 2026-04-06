@@ -8,5 +8,6 @@ Thumbs.db
 *.tmp
 *.log
 
-# Ignore test files (but keep the structure)
+# Ignore user-specific agent instruction files
+/Agents.md
 /Claude.md
