@@ -11,3 +11,6 @@ Thumbs.db
 # Ignore user-specific agent instruction files
 /Agents.md
 /Claude.md
+
+# Ignore local .claude directory (for testing)
+/.claude/
