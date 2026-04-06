@@ -9,7 +9,6 @@
   "plugins": [
     {
       "name": "agent-instruction-manager",
-      "displayName": "Agent Instruction Manager",
       "description": "Automatically switches between Agents.md and Claude.md based on active Claude Code sessions",
       "version": "1.0.0",
       "author": {
