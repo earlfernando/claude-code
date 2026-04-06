@@ -16,4 +16,4 @@ Automatically manages agent instruction files based on Claude Code session state
 
 ## Author
 
-earl
+Earl

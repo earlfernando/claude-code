@@ -1,14 +1,14 @@
 {
   "name": "earl-workflows",
   "version": "1.0.0",
-  "description": "earl's personalized Claude Code workflows and automation tools",
+  "description": "Personalized Claude Code workflows and automation tools",
   "plugins": [
     {
       "id": "agent-instruction-manager",
       "name": "Agent Instruction Manager",
       "description": "Automatically switches between Agents.md and Claude.md based on active Claude Code sessions",
       "version": "1.0.0",
-      "author": "earl",
+      "author": "Earl",
       "source": {
         "source": "github",
         "repo": "earlfernando/claude-code",

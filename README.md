@@ -1,4 +1,4 @@
-# earl's Claude Code Workflows
+# Claude Code Workflows
 
 Personal collection of Claude Code workflows and automation tools.
 
