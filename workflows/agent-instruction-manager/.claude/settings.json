@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "SessionStart": [{
+      "matcher": "",
+      "hooks": [{
+        "type": "command",
+        "command": "cd \"$PWD\" && ./.claude/hooks/preSession.sh \"$PWD\""
+      }]
+    }],
+    "SessionEnd": [{
+      "matcher": "",
+      "hooks": [{
+        "type": "command",
+        "command": "cd \"$PWD\" && ./.claude/hooks/postSession.sh \"$PWD\""
+      }]
+    }]
+  }
+}

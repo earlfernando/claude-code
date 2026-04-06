@@ -1,0 +1,38 @@
+{
+  "name": "earl-workflows",
+  "version": "1.0.0",
+  "description": "earl's personalized Claude Code workflows and automation tools",
+  "plugins": [
+    {
+      "id": "agent-instruction-manager",
+      "name": "Agent Instruction Manager",
+      "description": "Automatically switches between Agents.md and Claude.md based on active Claude Code sessions",
+      "version": "1.0.0",
+      "author": "earl",
+      "source": {
+        "source": "github",
+        "repo": "earlfernando/claude-code",
+        "path": "workflows/agent-instruction-manager"
+      },
+      "files": [
+        {
+          "source": ".claude/hooks/preSession.sh",
+          "destination": "hooks/preSession.sh"
+        },
+        {
+          "source": ".claude/hooks/postSession.sh",
+          "destination": "hooks/postSession.sh"
+        },
+        {
+          "source": ".claude/settings.json",
+          "destination": "settings.json"
+        }
+      ],
+      "tags": ["hooks", "agent-instructions", "earl-workflows"],
+      "requiresSettings": true,
+      "permissions": {
+        "hooks": ["SessionStart", "SessionEnd"]
+      }
+    }
+  ]
+}

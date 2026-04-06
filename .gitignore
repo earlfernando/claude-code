@@ -1,0 +1,12 @@
+# Ignore IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore test files (but keep the structure)
+/Claude.md
